@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Gmail Interface</string>
+    <string name="sang_nguyen">Sang Nguyen</string>
+    <color name="red">#DC4236</color>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+
+    <TextView
+        android:id="@+id/icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_round_avatar"
+        android:text="A"
+        android:textSize="32sp"
+        android:gravity="center_horizontal"
+
+        />
+    <TextView
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_right_arrow"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_toEndOf="@+id/icon" />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/arrow"
+        android:gravity="right"
+        android:text="@string/sang_nguyen"
+        android:layout_marginTop="2dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_toEndOf="@+id/arrow"
+        tools:ignore="RtlHardcoded" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/time"
+        android:layout_alignBottom="@+id/name"
+        android:text="23:07"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/arrow"
+        android:layout_marginLeft="50dp"
+        android:singleLine="true"
+        android:text="Về việc gặp mặt"
+        />
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subject"
+        android:layout_marginLeft="50dp"
+        android:layout_toLeftOf="@+id/star"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Có mặt tại Ngõ 197, đường Bạch Mai, quận Hai Bà Trưng, Hà Nội lúc"
+        />
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_star"
+        android:layout_alignBottom="@+id/content"
+
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>
